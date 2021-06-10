@@ -10,7 +10,7 @@ Google Search API를 사용하여 네트워크로 부터 해당 이미지 url을
 2. 받아온 json파일을 decoding하여 url의 Array형태로 바꾸기
 3. Array 형태로 된 url들을 dataTask로 구성하여 서버로 부터 이미지 받아와서 UIImage() 형태로 만들기
 4. table view cell 구성시에, 이미지의 너비를 고정시키고(content view bounds width - 40), 비율에 맞게 높이를 계산하여 이미지의 높이 제약조건을 설정하여 이미지의 크기에 따라 cell의 높이가 동적으로 조정되도록 하기
-6. table view를 구성할 때, prefetching data source 사용해서 이미지 미리 받아오기
+6. table view를 구성할 때, 모든 이미지를 처음부터 다 받아와서 구성하는 것이 아니고, 처음에 visible한 영역만 가져오고 나머지는 prefetching data source 사용해서 미리 받아오기
 7. table view의 cell에서 버튼을 클릭하면 디스크에 해당 cell이 가진 이미지 파일 추가하기
 8. 저장된 이미지 화면에서는 디스크로 부터 이미지 파일을 받아와서 table view에 뿌려주기 
 9. 저장된 이미지 화면에서 search controller를 이용해서 이미지를 검색할 수 있도록 하기
