@@ -14,6 +14,8 @@
 		072C4699266F762E0068DF25 /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072C4698266F762E0068DF25 /* ImageSearchViewController.swift */; };
 		072C46A0266F784C0068DF25 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072C469F266F784C0068DF25 /* SearchAPI.swift */; };
 		072C46A3266F78B70068DF25 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072C46A2266F78B70068DF25 /* Item.swift */; };
+		073C7D212678462F000C6663 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C7D202678462F000C6663 /* Storage.swift */; };
+		073C7D4626791989000C6663 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C7D4526791989000C6663 /* ImageCell.swift */; };
 		076240942672468600029CD1 /* DetailImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076240932672468600029CD1 /* DetailImageViewController.swift */; };
 		0762409926727AE700029CD1 /* StoredImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0762409826727AE700029CD1 /* StoredImageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		072C4698266F762E0068DF25 /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
 		072C469F266F784C0068DF25 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
 		072C46A2266F78B70068DF25 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		073C7D202678462F000C6663 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		073C7D4526791989000C6663 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		076240932672468600029CD1 /* DetailImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageViewController.swift; sourceTree = "<group>"; };
 		0762409826727AE700029CD1 /* StoredImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,26 +66,20 @@
 		072C4680266F753E0068DF25 /* ImageSearch */ = {
 			isa = PBXGroup;
 			children = (
-				072C469D266F76550068DF25 /* Network */,
+				072C46A2266F78B70068DF25 /* Item.swift */,
+				072C469F266F784C0068DF25 /* SearchAPI.swift */,
 				072C4681266F753E0068DF25 /* AppDelegate.swift */,
-				072C4687266F753E0068DF25 /* Main.storyboard */,
 				0762409826727AE700029CD1 /* StoredImageViewController.swift */,
 				076240932672468600029CD1 /* DetailImageViewController.swift */,
 				072C4698266F762E0068DF25 /* ImageSearchViewController.swift */,
+				073C7D4526791989000C6663 /* ImageCell.swift */,
+				073C7D202678462F000C6663 /* Storage.swift */,
 				072C468A266F75400068DF25 /* Assets.xcassets */,
+				072C4687266F753E0068DF25 /* Main.storyboard */,
 				072C468C266F75400068DF25 /* LaunchScreen.storyboard */,
 				072C468F266F75400068DF25 /* Info.plist */,
 			);
 			path = ImageSearch;
-			sourceTree = "<group>";
-		};
-		072C469D266F76550068DF25 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				072C469F266F784C0068DF25 /* SearchAPI.swift */,
-				072C46A2266F78B70068DF25 /* Item.swift */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				072C46A3266F78B70068DF25 /* Item.swift in Sources */,
+				073C7D212678462F000C6663 /* Storage.swift in Sources */,
 				072C4699266F762E0068DF25 /* ImageSearchViewController.swift in Sources */,
 				072C4682266F753E0068DF25 /* AppDelegate.swift in Sources */,
 				0762409926727AE700029CD1 /* StoredImageViewController.swift in Sources */,
+				073C7D4626791989000C6663 /* ImageCell.swift in Sources */,
 				072C46A0266F784C0068DF25 /* SearchAPI.swift in Sources */,
 				076240942672468600029CD1 /* DetailImageViewController.swift in Sources */,
 			);
@@ -236,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -291,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

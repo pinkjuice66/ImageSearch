@@ -1,5 +1,6 @@
 import UIKit
 
+// SearchAPI에서 중복으로 request 하는 상황이 발생하지 않도록 설정하고 싶다.
 class SearchAPI {
     
     static let session: URLSession = {
@@ -32,7 +33,7 @@ class SearchAPI {
 
     }
 
-    static func getImage(from url : URL, completion : @escaping (UIImage?) -> Void ) {
+    static func getImage(from url : URL, completion : @escaping (Data?) -> Void ) {
         let task = session.dataTask(with: url) { data, response, error in
             guard error == nil else {
                 print(error?.localizedDescription)
@@ -45,8 +46,7 @@ class SearchAPI {
                 completion(nil)
                 return
             }
-            let image = UIImage(data: data!)
-            completion(image)
+            completion(data)
         }
         task.resume()
     }
