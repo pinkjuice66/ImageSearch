@@ -5,6 +5,15 @@
 Google Search API를 사용하여 네트워크로 부터 해당 이미지 url을 받아온 후에 테이블뷰에 뛰운다. 테입블 뷰에서는 이미지를 선택해 디스크에 저장할 수 있으며, 저장된 이미지 화면에서는
 디스크에 저장된 이미지들을 테이블뷰 형태로 나열해 보여주고 원하는 이미지를 검색할 수도 있고 삭제할 수도 있다.
 
+# 이미지 검색 화면,  저장된 이미지 화면
+<table>
+  <tr>
+    <td valign="top"><img src="https://user-images.githubusercontent.com/44376599/122411986-29fc4080-cfc0-11eb-8b30-7e6527c4ed20.png"/></td>
+    <td valign="top"><img src="https://user-images.githubusercontent.com/44376599/122412543-9e36e400-cfc0-11eb-99db-e9b210c57d81.png"/></td>
+  </tr>
+</table>
+
+
 # 공부한것(앱의 핵심요소)
 1. URLSession으로 dataTask를 구성하여 서버로부터 이미지들의 url이 있는 json 파일 받아오기
 2. 받아온 json파일을 decoding하여 url의 Array형태로 바꾸기
@@ -16,7 +25,6 @@ Google Search API를 사용하여 네트워크로 부터 해당 이미지 url을
 8. table view의 cell에서 버튼을 클릭하면 디스크에 해당 cell이 가진 이미지 파일 추가하기
 9. 저장된 이미지 화면에서는 디스크로 부터 이미지 파일을 받아와서 table view에 뿌려주기 
 10. 저장된 이미지 화면에서 search controller를 이용해서 이미지를 검색할 수 있도록 하기
-
 
 
 # 더 공부해야 할 것들, 도전과제
